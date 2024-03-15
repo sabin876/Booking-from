@@ -132,3 +132,14 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+/* for the count */
+.counter {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.count {
+   margin: 0 10px;
+}
