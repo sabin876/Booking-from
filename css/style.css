@@ -16,10 +16,16 @@
   margin: 80px;
   
 }
+
+.detail{
+   box-shadow: 0 0 5px rgba(0,0,0,0.3);
+   border-radius: 32px;
+}
+
 .details{
 /*   height: 300px; */
 /*   border: 1px solid black; */
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+/*  box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
   border-radius: 72px; 
   display: flex;
   align-items: center;
@@ -48,7 +54,9 @@
 .extended-travel{
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
+  padding: 12px;
+  border-top: 1px solid black;
 }
 
 .calander{
@@ -61,7 +69,8 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  border:1px solid blue;
+  /*border:1px solid blue;*/
+  justify-content: center;
 }
 
 .plan{
@@ -133,12 +142,13 @@
   font-weight: bold;
 }
 
-/* for the count */
+/* for the count 
 .counter {
  display: flex;
  align-items: center;
  justify-content: center;
 }
+*/
 
 .count {
    margin: 0 10px;
