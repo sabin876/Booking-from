@@ -18,8 +18,10 @@ incrementButton.addEventListener("click", () => {
 
 //event listener for the  decrement button
 decrementButton.addEventListener("click", () => {
-   count--;
-   updateCount();
+   if (count > 0) {
+      count--;
+      updateCount();
+   }
 });
 
 //initial update
