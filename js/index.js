@@ -3,6 +3,11 @@ let countElement = document.getElementById("count");
 //getting the increment and decrement buttons
 let incrementButton = document.getElementById("increment");
 var decrementButton = document.getElementById("decrement");
+//getting the paragraph tag
+let p = document.querySelector(".content1");
+let h5 = document.querySelector(".content2");
+console.log(p.innerHTML);
+console.log(h5);
 //inital count
 let count = 0;
 //function to update the count display
@@ -26,3 +31,12 @@ decrementButton.addEventListener("click", () => {
 
 //initial update
 updateCount();
+
+//submit 
+function Submit(e){
+  e.preventDefault();
+  p.innerHTML = `${count}*$80USD = `;
+  h5.innerHTML = `$${count * 80 }USD Total`;
+}
+
+
