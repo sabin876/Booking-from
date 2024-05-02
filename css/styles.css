@@ -316,13 +316,13 @@ h3,span{
   margin-bottom:12px;
 }
 
-.counter {
+.counter1 {
   display: flex;
   align-items: center;
 }
 
-.counter .increment-btn,
-.counter .decrement-btn {
+.counter1 .increment-btn,
+.counter1 .decrement-btn {
   width: 20px;
   height: 25px;
   cursor: pointer;
