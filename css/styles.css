@@ -335,4 +335,82 @@ h3,span{
   border: 1px solid #000
 }
 
+/* transportation */
+.container1{
+  box-shadow:  0 0 5px rgba(0,0,0,0.3);
+  border-radius: 32px;
+  margin: 5px auto;
+  width: 1125px;
+}
 
+.detail-heading{
+  border-radius: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.detail-heading > div{
+  display: flex;
+  gap: 6px;
+}
+
+.drop{
+  border: none;
+  width: 42px;
+  height: 42px;
+  background: #96b0a4;
+  padding: 8px;
+  border-radius: 50%;
+  Text-align: center;
+}
+
+.extended{
+  display: flex;
+  padding: 12px;
+  border-top: 3px solid #96b0a4;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.pickup{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jeep, .flight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outer-box{
+  background-color: #96b0a4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.inner-box1{
+  border: 1px solid;
+  background-color: #fff;
+  margin: 6px;
+  border-radius: 40px;
+  width: 150px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-box2{
+   border: 1px solid;
+  background-color: #fff;
+  margin: 6px;
+  border-radius: 10px;
+  width: 170px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
