@@ -18,13 +18,13 @@ h3,span{
   margin: auto;
   margin-top: 40px; 
 }
-
+/*
 .detail{
    box-shadow: 0 0 5px rgba(0,0,0,0.3);
    border-radius: 32px;
    width: 95%;
    margin: auto;
-}
+} */
 
 .details{
 /*   height: 300px; */
@@ -413,4 +413,17 @@ h3,span{
   padding: 12px;
   display: flex;
   align-items: center;
+}
+
+/*traveller details */
+label{
+ display: block;
+}
+
+form {
+  display: flex;
+}
+
+table tbody tr{
+   text-align: center;
 }
