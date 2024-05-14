@@ -159,8 +159,15 @@ h3,span{
 
 .count {
    margin: 0 10px;
+   border:1px solid black;
+   padding:1px 4px 0px;
 }
-
+button#increment {
+  padding: 1px 4px 0px;
+}
+button#decrement {
+  padding: 1px 4px 0px;
+}
 /* folded plan */
 .sub-div1,.sub-div2,.sub-div3{
   height: inherit;
