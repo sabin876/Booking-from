@@ -8,7 +8,9 @@
 h3,span{
   color: #095a5b;
 }
-
+.travel1.details i.far.fa-calendar-alt {
+  color: green;
+}
 .box{ 
 /*   border: 1px solid black; */
   width: 75%;
@@ -68,7 +70,7 @@ h3,span{
   background: #96b0a4;
 }
 .items{
-  display: flex;
+  display:flex;
   align-items: center;
   gap: 5px;
   /*border:1px solid blue;*/
@@ -280,7 +282,7 @@ h3,span{
   position: absolute;
   top: -5px;
   right: -5px;
-  opacity: ; /* Hide the checkbox */
+  opacity: 1; /* Hide the checkbox */
 }
 
 .right-panel {
