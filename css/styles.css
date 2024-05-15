@@ -77,6 +77,14 @@ h3,span{
   justify-content: center;
 }
 
+.items> .group{
+   border: 1px solid #000;
+   border-radius: 50%;
+   background-color: #96b0a4;
+   padding: 2px;
+   font-size: 18px;
+}
+
 .plan{
   display: flex;
   flex-direction: column;
@@ -97,11 +105,37 @@ h3,span{
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
   border-radius: 8px;
   grid-column-gap: 2px;
-  padding: 8px;
-    margin: 10px;
+  padding: 5px 25px;
+  margin: 10px;
   background: #fff;
   border: 1px solid green;
   border-radius: 60px;
+}
+
+.counter{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pricing h5{
+   text-align: center;
+}
+
+i{
+   font-size: 10px;
+}
+
+.select{
+   text-align: center;
+}
+
+.select button{
+  padding : 8px;
+  border-radius: 12px;
+  border: 1px solid;
+  font-size: 12px;
+  color: #095a5b 
 }
 
 .plan2{
@@ -158,7 +192,6 @@ h3,span{
 */
 
 .count {
-   margin: 0 10px;
    border:1px solid black;
    padding:1px 4px 0px;
 }
