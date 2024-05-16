@@ -74,7 +74,12 @@ h3,span{
   align-items: center;
   gap: 5px;
   /*border:1px solid blue;*/
-  justify-content: center;
+  /*justify-content: center;*/
+  width: 100px;
+}
+
+.items h5{
+  font-size: 12px;
 }
 
 .items> .group{
@@ -138,15 +143,40 @@ i{
   color: #095a5b 
 }
 
-.plan2{
+.total{
   display: flex;
-  width: 180px;
+  /*width: 180px;*/
   border: 2px solid green;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calculate{
+   padding: 8px;
+   margin: auto;
 }
 
 
-.div2{
+
+.content{
+   font-weight: 600;
+   font-size: 14px;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  text-align: center;
   background: #96b0a4;
+  padding: 8px;
+}
+
+.price h5 {
+   color: #095a5b;
+}
+
+.price h5 .total-price{
+   font-size: 18px;
 }
 
 .traveller{
