@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Main Div Example</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,18 +18,18 @@
         }
 
         .main-div {
-            background-color:white;
+            background-color: white;
             color: white;
             padding: 30px;
             margin: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             text-align: center;
-            width:800px;
-            height:500px;
+            width: 800px;
+            height: auto;
             border: 2px solid white;
             transition: transform 0.3s, box-shadow 0.3s;
-            position:relative;
+            position: relative;
         }
 
         .main-div:hover {
@@ -48,53 +48,83 @@
         }
 
         .div1, .div2, .div3, .div4, .div5 {
-            background-color:#ffff;
-            color:#125958;
+            background-color: #fff;
+            color: #125958;
             padding: 18px;
             margin: 20px 0;
             border-radius: 15px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             text-align: left;
-            font-weight:750;
+            font-weight: 750;
         }
 
-        .div1 {
-            background-color:#ffff;
-        }
-
-        .div2 {
-            background-color:#fff;
-        }
-
-        .div3 {
-            background-color: #fff;
-        }
-
-        .div4 {
-            background-color: #fff;
-        }
-
-        .div5 {
-            background-color: #fff;
-
-        }
         .dropdown-btn {
-            background-color:#a5bdbd;
+            background-color: #a5bdbd;
             border: none;
             cursor: pointer;
             outline: none;
             padding: 5px;
-            margin-left:10px;
-            border:1.2px solid black;
-            border-radius:50%;
+            margin-left: 10px;
+            border: 1.2px solid black;
+            border-radius: 50%;
         }
         
         .dropdown-btn:hover {
             background-color: #f0f0f0;
             border-radius: 50%;
         }
+
+        .hiddenDiv
+        {
+            width:400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius:15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color:black;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-row > div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-row > div:last-child {
+            margin-right: 0;
+        }
+        .form-row label {
+            margin-bottom: 5px;
+        }
+        .form-row input,
+        .form-row select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width:88%; /* Ensures inputs take up full width */
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
         
-        .account{
+        .account {
             width: 70%;
             box-shadow: 0 0 5px rgba(0,0,0,0.3);
             padding: 12px 28px;
@@ -102,26 +132,27 @@
             margin-top: 60px;
             display: flex;
             justify-content: space-between;
-            background:#a5bdbd;
+            background: #a5bdbd;
             border-radius: 16px;
-          }
+        }
           
-          .account>.account1> div{
+        .account > .account1 > div {
             background: #095a5b;
             border-radius: 24px;
             padding: 12px;
             text-align: center;
-          }
+        }
           
-          .account>.account1> div> a{
-            color:white;
+        .account > .account1 > div > a {
+            color: white;
             text-decoration: none;
             font-weight: bold;
-          }
-
-        h5{
-        color:black;
         }
+
+        h5 {
+            color: black;
+        }
+
         .close-btn {
             position: absolute;
             top: 10px;
@@ -130,65 +161,119 @@
             border: none;
             font-size: 1.5em;
             color: #095a5b;
-        
         }
     </style>
 </head>
 <body>
-    <div class="main-div">
-       
-        <button class="close-btn"><i class="fas fa-times"></i></button>
+    <div class="main-div" id="mainDiv">
+        <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
         <div class="div1">Travel Details
             <i class="fas fa-calendar-alt" style="color:#125958; font-size: 1.1em;"></i> 
             <button class="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
-        
+        </div>
+        <div class="div2">Accommodation
+            <i class="fas fa-bed" style="color:#125958; font-size: 1.1em;"></i>
+            <button class="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="div3">Transport
+            <i class="fas fa-bus" style="color:#125958; font-size: 1.1em;"></i>
+            <button class="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="div4">Travel Details
+            <i class="fas fa-suitcase" style="color:#125958; font-size: 1.1em;"></i>
+            <button class="dropdown-btn" id="div4Btn"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="hidden-div" id="hiddenDiv">
+         
+<div class="hiddenDiv">
+    <form action="/submit-form" method="post">
+        <div class="form-row">
+            <div>
+                <label for="title">Title</label>
+                <select id="title" name="title" required>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option>
+                </select>
+            </div>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
         </div>
         
-            <div class="div2">
+        <!-- New row for email and phone -->
+        <div class="form-row">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
 
-               Accommodation <i class="fas fa-bed" style="color:#125958; font-size: 1.1em;"></i>
-               <button class="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
-               
+        <!-- Rest of your form -->
+        <div class="form-row">
+            <div>
+                <label for="email">mail Adress</label>
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="div3">
-                Transport
-                <i class="fas fa-bus" style="color:#125958;; font-size: 1.1em;"></i> 
-                <button class="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
+            <div>
+                <label for="phone">city</label>
+                <input type="tel" id="phone" name="phone" required>
             </div>
-            
-            <div class="div4">
-               Travels Details<i class="fas fa-suitcase" style="color:#125958; font-size: 1.1em;"></i>
-               <button class="dropdown-btn"><i class="fas fa-chevron-down"></i></button>
-            </div>
-            
-    
-  <div class="account">
-    <div class="account1">
-      <h5>Have an account?</h5>
-      <div>
-        <a href="#">Log In</a>
-      </div>
-    </div>
-    <div class="account1">
-       <h5>Don't Have an account?</h5>
-      <div>
-        <a href="#">Create One</a>
-      </div>
-    </div>
-    <div class="account1">
-       <h5>or Continue as Guest</h5>
-      <div>
-        <a href="#">Continue as Guest</a>
-      </div>
-    </div>
-  </div>
- </div>
+        </div>
         
+
+        <!-- ... -->
+        <div class="form-row">
+            <div>
+                <label for="email">country</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Region</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+
+    </form>
+</div>
+  
         
+        </div>
+        <div class="account">
+            <div class="account1">
+                <h5>Have an account?</h5>
+                <div><a href="#">Log In</a></div>
+            </div>
+            <div class="account1">
+                <h5>Don't Have an account?</h5>
+                <div><a href="#">Create One</a></div>
+            </div>
+            <div class="account1">
+                <h5>or Continue as Guest</h5>
+                <div><a href="#">Continue as Guest</a></div>
+            </div>
+        </div>
     </div>
     <script>
-        document.getElementById('closeBtn').addEventListener('click', function() {
-            document.getElementById('mainDiv').style.display = 'none';
+       
+
+        document.getElementById('div4Btn').addEventListener('click', function() {
+            var hiddenDiv = document.getElementById('hiddenDiv');
+            if (hiddenDiv.style.display === 'none' || hiddenDiv.style.display === '') {
+                hiddenDiv.style.display = 'block';
+            } else {
+                hiddenDiv.style.display = 'none';
+            }
         });
     </script>
 </body>
