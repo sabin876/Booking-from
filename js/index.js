@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const decrementBtn = sub.querySelector('.decrement');
         const select = sub.querySelector('.calculate-total');
         const countSpan = sub.querySelector('.count');
-        const price = parseInt(sub.dataset.price);
+        //const price = parseInt(sub.dataset.price);
+        //console.log(price);
 
         incrementBtn.addEventListener('click', function() {
           let count = parseInt(countSpan.textContent);
@@ -19,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
 
-        select.addEventListener('click', function() {
-           updateTotal(); 
+        select.addEventListener('click', function(e) {
+           console.log(e);
         });
       });
 
-        function updateTotal() {
+        /*function updateTotal() {
         let total = 0;
         subs.forEach(sub => {
           const count = parseInt(sub.querySelector('.count').textContent);
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
         document.querySelector('.total .total-price').textContent = total;
-      }
+      }*/
 
     });
         
