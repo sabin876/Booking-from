@@ -225,10 +225,10 @@ i{
    border:1px solid black;
    padding:1px 4px 0px;
 }
-button#increment {
+.increment {
   padding: 1px 4px 0px;
 }
-button#decrement {
+.decrement {
   padding: 1px 4px 0px;
 }
 /* folded plan */
@@ -499,3 +499,49 @@ form {
 table tbody tr{
    text-align: center;
 }
+
+/*custom radio*/
+.custom-radio {
+      display: none;
+    }
+
+    .custom-label {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      background-color: white;
+      margin-right: 8px;
+    }
+
+    .custom-label::after {
+      content: '✔';
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: white;
+    }
+
+    .custom-radio:checked + .custom-label {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .custom-radio:checked + .custom-label::after {
+      display: block;
+    }
+
+    .location-options > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .location-options > div + .fa-solid {
+      margin: 0 10px;
+    }
