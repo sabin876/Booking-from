@@ -155,7 +155,7 @@ span {
 }
 
 .items>.group {
-  border: 1px solid #000;
+ 
   border-radius: 50%;
   background-color: #96b0a4;
   padding: 2px;
@@ -182,24 +182,29 @@ span {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     grid-column-gap: 2px;
-    padding: 1px 25px;
-    margin: 11px;
+    padding: 1px 7px;
+    margin: 16px;
     background: #fff;
     /* border: 1px solid green; */
     border-radius: 60px;
 }
 
 .counter {
+  --border-width:0.1px;
+  --border-color:#4a847c80;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid; */
-  width: 68px;
+  border: var(--border-width) solid var(--border-color);
   height: 27px;
   top: 10px;
   margin-top: 13px;
-  background: #dde0dd;
-  border-radius: 10px;
+  background: transparent;
+  border-radius: 5px;
+  overflow:hidden;
+  >span{
+    border:var(--border-width) solid var(--border-color);
+  }
 }
 
 
@@ -216,11 +221,12 @@ i {
 }
 
 .select button {
-  padding: 8px;
-  border-radius: 12px;
-  border: 1px solid;
-  font-size: 12px;
-  color: #095a5b
+  padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 12px;
+    color: #095a5b;
+    margin-top: 10px;
 }
 
 .total {
@@ -492,12 +498,9 @@ i {
   align-items: center;
 }
 .counter>button {
-  border: none;
   background: none;
 }
-.counter>span{
-  border:none;
-}
+
 
 .counter1 .increment-btn,
 .counter1 .decrement-btn {
