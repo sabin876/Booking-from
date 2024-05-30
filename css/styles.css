@@ -4,18 +4,21 @@
   box-sizing: border-box;
  
 }
-
+h3{
+  font-size: 1.5rem !important;
+}
 h3,span{
   color: #095a5b;
 }
 .travel1.details i.far.fa-calendar-alt {
-  color: green;
+  font-size: 21px;
+  color: #095a5b;
 }
 .box{ 
 /*   border: 1px solid black; */
   width: 75%;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  border-radius: 5px;
+  border-radius: 16px;
   padding: 40px;
   margin: auto;
   margin-top: 40px; 
@@ -412,7 +415,7 @@ i{
   box-shadow:  0 0 5px rgba(0,0,0,0.3);
   border-radius: 32px;
   margin: 5px auto;
-  width: 1045px;
+  
 }
 
 .detail-heading{
@@ -545,3 +548,7 @@ table tbody tr{
     .location-options > div + .fa-solid {
       margin: 0 10px;
     }
+    .container1.accordion-item {
+      margin-top: 1rem !important;
+      border-radius: 25px !important;
+  }
