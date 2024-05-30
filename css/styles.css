@@ -106,29 +106,37 @@ h3,span{
 }
 
 .plan1 {
-  background: #96b0a4;
+     background: hsl(161.13deg 69.85% 23.73% / 33%);
   padding: 8px;
   border-radius: 12px;
 }
 
 .plan1>.sub {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  grid-column-gap: 2px;
-  padding: 5px 25px;
-  margin: 10px;
-  background: #fff;
-  border: 1px solid green;
-  border-radius: 60px;
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    grid-column-gap: 2px;
+    padding: 1px 25px;
+    margin: 11px;
+    background: #fff;
+    /* border: 1px solid green; */
+    border-radius: 60px;
 }
 
 .counter {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid; */
+  width: 68px;
+  height: 27px;
+  top: 10px;
+  margin-top: 13px;
+  background: #dde0dd;
+  border-radius: 10px;
 }
+
 
 .pricing h5 {
   text-align: center;
@@ -417,6 +425,13 @@ i {
 .counter1 {
   display: flex;
   align-items: center;
+}
+.counter>button {
+  border: none;
+  background: none;
+}
+.counter>span{
+  border:none;
 }
 
 .counter1 .increment-btn,
