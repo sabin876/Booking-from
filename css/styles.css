@@ -206,20 +206,23 @@ i {
 
   &>div {
     flex-grow: 1;
+    text-align: center;
 
     h5 {
       text-align: center;
+    }
+
+    a.btn {
+      background: #095a5b;
+      padding: 12px;
+      text-align: center;
+      min-width: 11rem;
+      width: 100%;
     }
   }
 
 }
 
-.account>.account1>div {
-  background: #095a5b;
-  border-radius: 24px;
-  padding: 12px;
-  text-align: center;
-}
 
 .account>.account1>div>a {
   color: #fff;
