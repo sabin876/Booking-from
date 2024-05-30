@@ -4,10 +4,13 @@
   box-sizing: border-box;
 
 }
-h3{
+
+h3 {
   font-size: 1.5rem !important;
 }
-h3,span{
+
+h3,
+span {
   color: #095a5b;
 }
 
@@ -16,10 +19,75 @@ h3,span{
   color: #095a5b;
 }
 
+/* Datetime picker css */
+
+.datepicker.custom {
+  display: block;
+}
+
+.datepicker.custom table th {
+  color: #888;
+  font-size: 11px;
+}
+
+.datepicker.custom .datepicker__wrapper {
+  width: 100%;
+  padding: 0;
+}
+
+.datepicker.custom .datepicker__pane {
+  float: left;
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.datepicker.custom .datepicker__pane:not(:first-child) .datepicker__prev,
+.datepicker.custom .datepicker__pane:not(:last-child) .datepicker__next {
+  display: none;
+}
+
+.datepicker.custom .datepicker__day div:hover,
+.datepicker.custom .datepicker__day.is-highlighted:not(.is-selected) div {
+  background: #095a5b2e;
+}
+
+.datepicker.custom .datepicker__daynum {
+  /* color: white; */
+  font-weight: bold;
+}
+
+.datepicker.custom .datepicker__day.is-selected div:hover {
+  /* background: #2196F3; */
+}
+
+.datepicker.custom .datepicker__day.is-disabled.is-selected div,
+.datepicker.custom .datepicker__day.is-otherMonth.is-selected div,
+.datepicker.custom .datepicker__day.is-disabled.is-selected+.is-selected div::before,
+.datepicker.custom .datepicker__day.is-otherMonth.is-selected+.is-selected div::before {
+  background: #444;
+}
+
+.datepicker.custom .datepicker__day.is-disabled .datepicker__daynum,
+.datepicker.custom .datepicker__day.is-otherMonth .datepicker__daynum {
+  color: #4446;
+}
+
+.datepicker.custom .datepicker__day.is-disabled.is-selected .datepicker__daynum,
+.datepicker.custom .datepicker__day.is-otherMonth.is-selected .datepicker__daynum {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.datepicker table {
+  margin-top: 50%;
+  transform: translateY(-40%);
+}
+
+/* Datetime picker css ends*/
+
 .box {
   /*   border: 1px solid black; */
   width: 75%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
   padding: 40px;
   margin: auto;
@@ -38,7 +106,7 @@ h3,span{
   /*   height: 300px; */
   /*   border: 1px solid black; */
   /*  box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,15 +141,12 @@ h3,span{
 
 .calander {
   width: 58%;
-  background: #96b0a4;
 }
 
 .items {
   display: flex;
   align-items: center;
   gap: 5px;
-  /*border:1px solid blue;*/
-  /*justify-content: center;*/
   width: 100px;
 }
 
@@ -438,7 +503,7 @@ i {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 32px;
   margin: 5px auto;
-  
+
 }
 
 .detail-heading {
@@ -572,6 +637,7 @@ table tbody tr {
 .location-options>div+.fa-solid {
   margin: 0 10px;
 }
+
 .accordion-flush>.accordion-item {
   border-radius: 20px !important;
 }
