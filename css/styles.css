@@ -38,12 +38,12 @@ h3,span{
   /*   height: 300px; */
   /*   border: 1px solid black; */
   /*  box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
-  border-radius: 72px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-
+  margin-top: 15px;
 }
 
 .travel1>div {
@@ -571,4 +571,7 @@ table tbody tr {
 
 .location-options>div+.fa-solid {
   margin: 0 10px;
+}
+.accordion-flush>.accordion-item {
+  border-radius: 20px !important;
 }
