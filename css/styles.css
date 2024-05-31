@@ -40,7 +40,12 @@ span {
 .wo-bg-secondary {
   background-color: var(--secondary-color);
 }
-
+.wo-color-primary{
+  color: var(--primary-color);
+}
+.wo-color-secondary{
+  color: var(--secondary-color);
+}
 /* Datetime picker css */
 
 .datepicker.custom {
@@ -227,6 +232,9 @@ span {
   >span{
     border:var(--border-width) solid var(--border-color);
   }
+  >button{
+    border:none;
+  }
 }
 
 
@@ -409,7 +417,15 @@ i {
     justify-content: space-between;
   }
 }
-
+.capsule-2{
+    display: flex;
+    background-color: white;
+    padding: 4px 16px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-around;
+    gap:2rem;
+}
 /* Hotel image responsive */
 
 .mid-panel {
@@ -628,6 +644,7 @@ i {
   border-top: 3px solid #96b0a4;
   justify-content: space-around;
   align-items: center;
+  gap:3rem;
 }
 
 .pickup {
@@ -644,32 +661,37 @@ i {
 }
 
 .outer-box {
-  background-color: #96b0a4;
-  padding: 20px;
+  margin-top:5px;
+  background-color: var(--secondary-color);
+  padding: 22px 15px;
   border-radius: 12px;
+  gap:1rem;
 }
 
-.inner-box1 {
-  border: 1px solid;
-  background-color: #fff;
-  margin: 6px;
-  border-radius: 40px;
-  width: 150px;
-  padding: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .inner-box2 {
-  border: 1px solid;
   background-color: #fff;
   margin: 6px;
   border-radius: 10px;
-  width: 170px;
   padding: 12px;
   display: flex;
   align-items: center;
+}
+.vechile{
+  >div{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+  }
+  p{
+    margin-bottom: 0px;
+   
+  }
+  h5{
+    color:var(--primary-color);
+  }
 }
 
 /*traveller details */
