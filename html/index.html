@@ -144,17 +144,23 @@
                                 <div class="d-flex justify-content-around ">
                                     <span>3 Star</span>
                                     <span class="material-symbols-outlined">groups</span>
-                                    <button class="wo-btn">Select</button>
+                                    <label for="3-star" class="wo-btn">Select</label>
+                                    <input type="radio" class="hidden wo-check-input" id="3-star" name="hotel-star"
+                                        value="3">
                                 </div>
                                 <div class="d-flex justify-content-around ">
                                     <span>4 Star</span>
                                     <span class="material-symbols-outlined">groups</span>
-                                    <button class="wo-btn">Select</button>
+                                    <label for="4-star" class="wo-btn">Select</label>
+                                    <input type="radio" class="hidden wo-check-input" id="4-star" name="hotel-star"
+                                        value="3">
                                 </div>
                                 <div class="d-flex justify-content-around">
                                     <span>5 Star</span>
                                     <span class="material-symbols-outlined">groups</span>
-                                    <button class="wo-btn">Select</button>
+                                    <label for="5-star" class="wo-btn">Select</label>
+                                    <input type="radio" class="hidden wo-check-input" id="5-star" name="hotel-star"
+                                        value="3">
                                 </div>
                             </div>
                         </div>
@@ -319,57 +325,60 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="extended">
-                        
-                            <div class="jeep vechile">
-                                <div>
-                                    <span class="material-symbols-outlined">group</span>
-                                    <p>10 Person Selected</p>
-                                    <h5>Your Airport Pickup <span><sup>*optional</sup></span></h5>
-                                </div>
-                                <div class="outer-box">
-                                    
-                                    <div class="capsule-2 ">
-                                        <h5>Jeep</h5>
-                                        <span class="material-symbols-outlined wo-bg-secondary py-1 px-3 rounded-1">agriculture</span>
-                                        <button class="wo-btn wo-bg-secondary">Select</button>
-                                    </div>
-                                    <div class="inner-box2">
-                                        <h5>Airport Pickup = </h5>
-                                        <h3>$20</h3>
-                                    </div>
-                                </div>
+
+                        <div class="jeep vechile">
+                            <div>
+                                <span class="material-symbols-outlined">group</span>
+                                <p>10 Person Selected</p>
+                                <h5>Your Airport Pickup <span><sup>*optional</sup></span></h5>
                             </div>
-                            <div class="vechile">
-                                <div>
-                                    <span class="material-symbols-outlined">group</span>
-                                    <p>10 Person Selected</p>
-                                    <h5>Your Flight <span><sup>*optional</sup></span></h5>
+                            <div class="outer-box">
+
+                                <div class="capsule-2 ">
+                                    <h5>Jeep</h5>
+                                    <span
+                                        class="material-symbols-outlined wo-bg-secondary py-1 px-3 rounded-1">agriculture</span>
+                                    <button class="wo-btn wo-bg-secondary">Select</button>
                                 </div>
-                                <div class="outer-box">
-                                    <div class="capsule-2">
-                                        <h5>KTM</h5>
-                                        <span class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
-                                        <h5>PKR = $50</h5>
-                                        <button class="wo-btn wo-bg-secondary">Select</button>
-                                    </div>
-                                    <div class="capsule-2">
-                                        <h5>PKR</h5>
-                                        <span class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
-                                        <h5>CHT = $50</h5>
-                                        <button class="wo-btn">Select</button>
-                                    </div>
-                                    <div class="inner-box2">
-                                        <h5>Airport Pickup = </h5>
-                                        <h3>$100</h3>
-                                    </div>
+                                <div class="inner-box2">
+                                    <h5>Airport Pickup = </h5>
+                                    <h3>$20</h3>
                                 </div>
-                            </div>
-                            <div class="capsule-2 wo-color-primary text-center"> 
-                                <span class="fs-2">Total<br><span class="fs-1 fw-bold">$120</span></span>
                             </div>
                         </div>
-                        
-                    
+                        <div class="vechile">
+                            <div>
+                                <span class="material-symbols-outlined">group</span>
+                                <p>10 Person Selected</p>
+                                <h5>Your Flight <span><sup>*optional</sup></span></h5>
+                            </div>
+                            <div class="outer-box">
+                                <div class="capsule-2">
+                                    <h5>KTM</h5>
+                                    <span
+                                        class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
+                                    <h5>PKR = $50</h5>
+                                    <button class="wo-btn wo-bg-secondary">Select</button>
+                                </div>
+                                <div class="capsule-2">
+                                    <h5>PKR</h5>
+                                    <span
+                                        class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
+                                    <h5>CHT = $50</h5>
+                                    <button class="wo-btn">Select</button>
+                                </div>
+                                <div class="inner-box2">
+                                    <h5>Airport Pickup = </h5>
+                                    <h3>$100</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capsule-2 wo-color-primary text-center">
+                            <span class="fs-2">Total<br><span class="fs-1 fw-bold">$120</span></span>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -508,7 +517,7 @@ groups
   </div>
 
 </div>-->
-            <div class="account flex-wrap justify-content-center gap-2  ">
+            <div class="account wo-bg-secondary flex-wrap justify-content-center gap-2  ">
                 <div class="account1">
                     <h5>Have an account?</h5>
                     <a role="button" class="btn btn-success" href="#">Log In</a>
