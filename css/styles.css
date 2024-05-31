@@ -31,6 +31,21 @@ span {
   color: #095a5b;
   border-radius: 12px;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+}
+
+.wo-check-input {
+  display: none;
+}
+
+.wo-btn.selected {
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .wo-bg-primary {
@@ -40,12 +55,15 @@ span {
 .wo-bg-secondary {
   background-color: var(--secondary-color);
 }
-.wo-color-primary{
+
+.wo-color-primary {
   color: var(--primary-color);
 }
-.wo-color-secondary{
+
+.wo-color-secondary {
   color: var(--secondary-color);
 }
+
 /* Datetime picker css */
 
 .datepicker.custom {
@@ -228,8 +246,9 @@ span {
   >span {
     border: var(--border-width) solid var(--border-color);
   }
-  >button{
-    border:none;
+
+  >button {
+    border: none;
   }
 }
 
@@ -308,7 +327,6 @@ i {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
-  background: #96b0a4;
   border-radius: 16px;
 
   &>div {
@@ -413,15 +431,17 @@ i {
     justify-content: space-between;
   }
 }
-.capsule-2{
-    display: flex;
-    background-color: white;
-    padding: 4px 16px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: space-around;
-    gap:2rem;
+
+.capsule-2 {
+  display: flex;
+  background-color: white;
+  padding: 4px 16px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
 }
+
 /* Hotel image responsive */
 
 .mid-panel {
@@ -641,7 +661,7 @@ i {
   border-top: 3px solid #96b0a4;
   justify-content: space-around;
   align-items: center;
-  gap:3rem;
+  gap: 3rem;
 }
 
 .pickup {
@@ -658,11 +678,11 @@ i {
 }
 
 .outer-box {
-  margin-top:5px;
+  margin-top: 5px;
   background-color: var(--secondary-color);
   padding: 22px 15px;
   border-radius: 12px;
-  gap:1rem;
+  gap: 1rem;
 }
 
 
@@ -675,19 +695,22 @@ i {
   display: flex;
   align-items: center;
 }
-.vechile{
-  >div{
+
+.vechile {
+  >div {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
   }
-  p{
+
+  p {
     margin-bottom: 0px;
-   
+
   }
-  h5{
-    color:var(--primary-color);
+
+  h5 {
+    color: var(--primary-color);
   }
 }
 

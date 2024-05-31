@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const plans = document.querySelectorAll('.sub');
     const totalPriceElement = document.querySelector('.total-price');
     const contentElement = document.querySelector('.content');
-    
+
     let selectedPlan = null;
 
     plans.forEach(plan => {
@@ -39,17 +39,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const count = parseInt(selectedPlan.querySelector('.count').textContent, 10);
         const price = parseInt(selectedPlan.dataset.price, 10);
         const total = count * price;
-        
+
         contentElement.textContent = `${count} * $${price} USD =`;
         totalPriceElement.textContent = total;
     }
 });
 
 
+// Button as radio or checkbox input
+const allRadioInputs = document.querySelectorAll(".wo-check-input");
 
+allRadioInputs.forEach(radioInput => {
+    radioInput.onchange = () => {
 
+        if (radioInput.type === "radio") {
+            // getting all the radio input elements with same name as radioInput and removing "select" class from its corresponding label
 
+            const sameNameInputs = document.getElementsByName(`${radioInput.getAttribute("name")}`);
+            sameNameInputs.forEach(inp => {
+                document.querySelector(`label[for='${inp.getAttribute("id")}']`).classList.remove("selected");
+            })
+        }
 
+        document.querySelector(`label[for='${radioInput.getAttribute("id")}']`).classList.toggle("selected");
+    }
+})
 
 /*document.addEventListener('DOMContentLoaded', function() {
         const subs = document.querySelectorAll('.sub');
@@ -154,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });*/
 
 
-        
 
-        
+
+
 
