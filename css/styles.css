@@ -74,12 +74,7 @@ span {
 }
 
 .datepicker.custom .datepicker__daynum {
-  /* color: white; */
   font-weight: bold;
-}
-
-.datepicker.custom .datepicker__day.is-selected div:hover {
-  /* background: #2196F3; */
 }
 
 .datepicker.custom .datepicker__day.is-disabled.is-selected div,
@@ -177,7 +172,7 @@ span {
 }
 
 .items>.group {
- 
+
   border-radius: 50%;
   background-color: #96b0a4;
   padding: 2px;
@@ -193,27 +188,27 @@ span {
 }
 
 .plan1 {
-     background: hsl(161.13deg 69.85% 23.73% / 33%);
+  background: hsl(161.13deg 69.85% 23.73% / 33%);
   padding: 8px;
   border-radius: 12px;
 }
 
 .plan1>.sub {
-   display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    grid-column-gap: 2px;
-    padding: 1px 7px;
-    margin: 16px;
-    background: #fff;
-    /* border: 1px solid green; */
-    border-radius: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  grid-column-gap: 2px;
+  padding: 1px 7px;
+  margin: 16px;
+  background: #fff;
+  /* border: 1px solid green; */
+  border-radius: 60px;
 }
 
 .counter {
-  --border-width:0.1px;
-  --border-color:#4a847c80;
+  --border-width: 0.1px;
+  --border-color: #4a847c80;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,9 +218,10 @@ span {
   margin-top: 13px;
   background: transparent;
   border-radius: 5px;
-  overflow:hidden;
-  >span{
-    border:var(--border-width) solid var(--border-color);
+  overflow: hidden;
+
+  >span {
+    border: var(--border-width) solid var(--border-color);
   }
 }
 
@@ -244,11 +240,11 @@ i {
 
 .select button {
   padding: 5px 15px;
-    border-radius: 10px;
-    border: 1px solid;
-    font-size: 12px;
-    color: #095a5b;
-    margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  font-size: 12px;
+  color: #095a5b;
+  margin-top: 10px;
 }
 
 .total {
@@ -572,6 +568,7 @@ i {
   display: flex;
   align-items: center;
 }
+
 .counter>button {
   background: none;
 }
