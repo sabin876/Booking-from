@@ -130,126 +130,172 @@
                 </div>
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionExample">
-                    <div class="row justify-content-md-center">
-                        <div class=" left-panel col col-md-auto">
+                    <div class="row container py-4 accomodation-content">
+
+                        <div class="col col-lg-3">
                             <div class="d-flex justify-content-center align-items-center flex-column">
                                 <span class="material-symbols-outlined">group</span>
                                 <p>10 person selected</p>
                                 <h5>Choose Your Hotel</h5>
                             </div>
 
-                            <div id="accommodation">
-                                <div class="accommodation-option" data-value="3-star">
-                                    <p>3 Star </p>
+                            <div class="wo-bg-secondary mt-4 p-3 d-flex flex-column gap-4 star-selection">
+                                <!-- Hotel stars selection -->
+                                <div class="d-flex justify-content-around ">
+                                    <span>3 Star</span>
                                     <span class="material-symbols-outlined">groups</span>
-                                    <button class="select-button">Select</button>
+                                    <button class="wo-btn">Select</button>
                                 </div>
-                                <div class="accommodation-option" data-value="4-star">
+                                <div class="d-flex justify-content-around ">
                                     <span>4 Star</span>
                                     <span class="material-symbols-outlined">groups</span>
-                                    <button class="select-button">Select</button>
+                                    <button class="wo-btn">Select</button>
                                 </div>
-                                <div class="accommodation-option" data-value="5-star">
+                                <div class="d-flex justify-content-around">
                                     <span>5 Star</span>
                                     <span class="material-symbols-outlined">groups</span>
-                                    <button class="select-button">Select</button>
+                                    <button class="wo-btn">Select</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="middle-panel col col-lg-6">
-                            <div class="location-options">
+                        <div class="col col-lg-6 mid-panel ">
+                            <div
+                                class="location-options fs-4 bold fw-bold d-flex align-items-center justify-content-around">
                                 <div>
                                     <label for="kathmandu">Kathmandu</label>
                                     <input type="radio" id="kathmandu" name="location" value="kathmandu"
                                         class="custom-radio">
                                     <label for="kathmandu" class="custom-label"></label>
-
                                 </div>
-                                <i class="fa-solid fa-greater-than"></i>
+                                <i class="fa-solid fa-greater-than fs-3"></i>
                                 <div>
                                     <label for="pokhara">Pokhara</label>
                                     <input type="radio" id="pokhara" name="location" value="pokhara"
                                         class="custom-radio">
                                     <label for="pokhara" class="custom-label"></label>
-
                                 </div>
                             </div>
 
+                            <div class="hotel-images">
+                                <div>
+                                    <label for="img1">
+                                        <img Src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
+                                            width="200px" height="200px" alt="hotel1" />
+                                    </label>
 
-                            <div id="hotel-photos">
-                                <!-- Hotel photos will be displayed here -->
-                                <div class="hotel-photo">
-                                    <div class="night-price">2 nights/88</div>
-                                    <img Src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
-                                        alt="hotel1" />
-                                    <input type="checkbox" class="select-hotel" id="hotel1">
-                                    <label for="hotel1" class="select-hotel-label"></label>
-                                    <div class="hotel-name">Hotel Name 1</div>
+                                    <input type="radio" id="img1" name="hotel" value="pokhara" class="custom-radio">
+                                    <label for="img1" class="custom-label"></label>
+                                    <caption>Hotel 1</caption>
+                                    <span>*recomended</span>
+                                    <span class="night-price">2 nights/BB</span>
                                 </div>
-                                <div class="hotel-photo">
-                                    <div class="night-price">2 nights/88</div>
-                                    <img src="https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc="
-                                        alt="hotel2" />
-                                    <input type="checkbox" class="select-hotel" id="hotel1">
-                                    <label for="hotel1" class="select-hotel-label"></label>
-                                    <div class="hotel-name">Hotel Name 2</div>
+                                <div>
+                                    <label for="img4">
+                                        <img Src="https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc="
+                                            width="200px" height="200px" alt="hotel1" />
+                                    </label>
+                                    <input type="radio" id="img4" name="hotel" value="pokhara" class="custom-radio">
+                                    <caption>Hotel 2</caption>
+                                    <label for="img4" class="custom-label"></label>
+                                    <span class="night-price">2 nights/BB</span>
                                 </div>
-                                <div class="hotel-photo">
-                                    <div class="night-price">2 nights/88</div>
-                                    <img Src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
-                                        alt="hotel3" />
-                                    <input type="checkbox" class="select-hotel" id="hotel1">
-                                    <label for="hotel1" class="select-hotel-label"></label>
-                                    <div class="hotel-name">Hotel Name 3</div>
+                                <div>
+                                    <label for="img2">
+                                        <img Src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
+                                            width="200px" height="200px" alt="hotel1" />
+                                    </label>
+                                    <input type="radio" id="img2" name="hotel" value="pokhara" class="custom-radio">
+                                    <caption>Hotel 3</caption>
+                                    <label for="img2" class="custom-label"></label>
+                                    <span class="night-price">2 nights/BB</span>
                                 </div>
-                                <div class="hotel-photo">
-                                    <div class="night-price">2 nights/88</div>
-                                    <img src="https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc="
-                                        alt="hotel4" />
-                                    <input type="checkbox" class="select-hotel" id="hotel1">
-                                    <label for="hotel1" class="select-hotel-label"></label>
-                                    <div class="hotel-name">Hotel Name 4</div>
+                                <div>
+                                    <label for="img3">
+                                        <img Src="https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc="
+                                            width="200px" height="200px" alt="hotel1" />
+                                    </label>
+                                    <input type="radio" id="img3" name="hotel" value="pokhara" class="custom-radio">
+                                    <caption>Hotel 4</caption>
+                                    <label for="img3" class="custom-label"></label>
+                                    <span class="night-price">2 nights/BB</span>
                                 </div>
                             </div>
-                            <button>More Hotels</button>
+                            <button class="wo-btn d-block mx-auto fw-bold wo-bg-primary text-white">More
+                                Hotels >></button>
                         </div>
-                        <div class="right-panel col col-md-auto">
-                            <div class="accommodation-type">
-                                <button id="standard-btn">Standard</button>
-                                <button id="deluxe-btn">Deluxe</button>
+                        <div class="col col-md-3">
+                            <h3 class="text-center">Room Detail</h3>
+                            <div class="room-type d-flex gap-4 justify-content-center">
+                                <button class="wo-btn">Standard</button>
+                                <button class="wo-btn">Delux</button>
                             </div>
-                            <div class="room-type-options">
-                                <div class=" single">
-                                    <div class="num-rooms">
-                                        <button id="single-btn">Single</button>
-                                        <div class="counter1">
-                                            <button class="decrement-btn">-</button>
-                                            <div id="single-rooms" class="room-count">0</div>
-                                            <button class="increment-btn">+</button>
-                                        </div>
+
+                            <div
+                                class=" mt-2 room-bed-selection d-flex gap-2 justify-content-around align-items-center">
+                                <!-- Single, double, triple bed room selection -->
+                                <div class="single">
+                                    <button class="wo-btn">Single</button>
+                                    <div class="counter">
+                                        <button class="decrement">-</button>
+                                        <span id="first-count" class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
                                 <div class="double">
-                                    <div class="num-rooms">
-                                        <button id="double-btn">Double</button>
-                                        <div class="counter1">
-                                            <button class="decrement-btn">-</button>
-                                            <div id="single-rooms" class="room-count">0</div>
-                                            <button class="increment-btn">+</button>
-                                        </div>
+                                    <button class="wo-btn">Double</button>
+                                    <div class="counter">
+                                        <button class="decrement">-</button>
+                                        <span id="first-count" class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
                                 <div class="triple">
-                                    <div class="num-rooms">
-                                        <button id="triple-btn">Triple</button>
-                                        <div class="counter1">
-                                            <button class="decrement-btn">-</button>
-                                            <div id="single-rooms" class="room-count">0</div>
-                                            <button class="increment-btn">+</button>
-                                        </div>
-
+                                    <button class="wo-btn">Triple</button>
+                                    <div class="counter">
+                                        <button class="decrement">-</button>
+                                        <span id="first-count" class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="room-price-calc">
+                                <h4 class="mt-5 text-center"> <span> 5 </span> * Double Room </h4>
+                                <hr>
+
+                                <div class="capsules d-flex flex-column justify-content-center align-items-center">
+                                    <div class="capsule">
+                                        <p>
+                                            <span>5</span> * $240 USD =
+                                        </p>
+                                        <p>
+                                            <sup>$</sup>1,200 <sup>USD</sup>
+                                        </p>
+                                    </div>
+                                    <span class="note">*The cost include 2 night Hotel
+                                        accomodation</span>
+                                    <i class="fa fa-plus"></i>
+                                    <div class="capsule">
+                                        <p>
+                                            <span>5</span> * $240 USD =
+                                        </p>
+                                        <p>
+                                            <sup>$</sup>1,200 <sup>USD</sup>
+                                        </p>
+                                    </div>
+                                    <span class="note">*The cost include 2 night Hotel
+                                        accomodation</span>
+                                    <i class="fa fa-plus"></i>
+                                    <div class="capsule">
+                                        <p>
+                                            <span>5</span> * $240 USD =
+                                        </p>
+                                        <p>
+                                            <sup>$</sup>1,200 <sup>USD</sup>
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
