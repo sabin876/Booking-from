@@ -1,9 +1,15 @@
+:root {
+  --primary-color: #015b59;
+  --secondary-color: #a4bebd;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 
 }
+
 
 h3 {
   font-size: 1.5rem !important;
@@ -17,6 +23,22 @@ span {
 .travel1.details i.far.fa-calendar-alt {
   font-size: 21px;
   color: #095a5b;
+}
+
+.wo-btn {
+  padding: .2rem .7rem;
+  border: 2px solid #095a5b4d;
+  color: #095a5b;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.wo-bg-primary {
+  background-color: var(--primary-color);
+}
+
+.wo-bg-secondary {
+  background-color: var(--secondary-color);
 }
 
 /* Datetime picker css */
@@ -361,16 +383,8 @@ i {
 
 /* Accommodation css */
 
-.container {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  padding: 12px;
-  margin: 0 auto;
-  width: 1125px;
-  margin-top: 45px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: space-around;
-
+.accomodation-content {
+  color: var(--primary-color);
 }
 
 .left-panel {
@@ -384,10 +398,28 @@ i {
   border-radius: 12px
 }
 
-#accommodation {
-  background-color: #96b0a4;
-  padding: 20px;
+.star-selection {
   border-radius: 12px;
+
+  >div {
+    background-color: white;
+    padding: 11px 8px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Hotel image responsive */
+
+.mid-panel {
+  container: mid / inline-size;
+}
+
+@container mid (max-width: 400px) {
+  .hotel-images {
+    grid-template-columns: 1fr;
+  }
 }
 
 #accommodation .accommodation-option {
@@ -422,19 +454,33 @@ i {
 }
 
 
-.middle-panel .location-options {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 16px;
-}
 
-#hotel-photos {
-  display: flex;
+.hotel-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: start;
+  gap: 20px;
+  padding: 1rem;
 
-  gap: 30px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  >div {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & label {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .custom-label {
+      position: absolute;
+      top: -3px;
+      right: -6px;
+    }
+  }
 }
 
 .hotel-photo {
@@ -451,7 +497,8 @@ i {
   border-radius: 10px;
   padding: 5px 10px;
   font-size: 0.6rem;
-  border: 2px solid #095a5b;
+  border: 2px solid var(--primary-color);
+  font-weight: bold;
 }
 
 .select-hotel {
@@ -470,27 +517,55 @@ i {
   margin-bottom: 10px;
 }
 
-.room-type-options {
-  margin-top: 20px;
-  display: flex;
-  gap: 5px
+
+.room-bed-selection {
+  >div {
+    button {
+      border-color: var(--primary-color);
+    }
+
+    .counter {
+      margin-top: 9px;
+    }
+  }
 }
 
-.room-type {}
+.capsules {
 
-.num-rooms {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .capsule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    overflow: hidden;
 
-.num-rooms>button {
-  width: 80px;
-  padding: 5px;
-  border-radius: 24px;
-  border: 2px solid #095a5b;
-  background-color: #fff;
-  margin-bottom: 12px;
+    p {
+      padding: .8rem .1rem;
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.4ch;
+    }
+
+    p:nth-child(2) {
+      padding-inline: .123rem;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      font-weight: bold;
+      font-size: 2ch;
+    }
+  }
+
+  >i {
+    margin-block: 1rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  .note {
+    font-size: 8px;
+  }
 }
 
 .counter1 {
@@ -624,11 +699,11 @@ table tbody tr {
   cursor: pointer;
   position: relative;
   background-color: white;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .custom-label::after {
-  content: '✔';
+  content: '\2713';
   display: none;
   position: absolute;
   top: 50%;
@@ -636,11 +711,12 @@ table tbody tr {
   transform: translate(-50%, -50%);
   font-size: 16px;
   color: white;
+  font-weight: bolder;
 }
 
 .custom-radio:checked+.custom-label {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .custom-radio:checked+.custom-label::after {
