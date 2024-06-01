@@ -2,26 +2,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const plans = document.querySelectorAll('.sub');
     const totalPriceElement = document.querySelector('.total-price');
     const contentElement = document.querySelector('.content');
+    //minimum and maximum limits for each plan
+
+    const minLimits = [1, 6, 11];
+    const maxLimits = [5, 10, 20];
 
     let selectedPlan = null;
 
-    plans.forEach(plan => {
+    plans.forEach((plan, index) => {
         const incrementBtn = plan.querySelector('.increment');
         const decrementBtn = plan.querySelector('.decrement');
         const countElement = plan.querySelector('.count');
         const selectBtn = plan.querySelector('.calculate-total');
         const price = parseInt(plan.dataset.price, 10);
 
+        //initialize tha count to minimum limit
+        countElement.textContent = minLimits[index];
+
         incrementBtn.addEventListener('click', () => {
-            countElement.textContent = parseInt(countElement.textContent, 10) + 1;
-            if (selectedPlan === plan) {
-                updateTotal();
+            let count = parseInt(countElement.textContent, 10);
+            if (count < maxLimits[index]) {
+                countElement.textContent = parseInt(countElement.textContent, 10) + 1;
+                if (selectedPlan === plan) {
+                    updateTotal();
+                }
             }
         });
 
         decrementBtn.addEventListener('click', () => {
             let count = parseInt(countElement.textContent, 10);
-            if (count > 0) {
+            if (count > minLimits[index]) {
                 countElement.textContent = count - 1;
                 if (selectedPlan === plan) {
                     updateTotal();
