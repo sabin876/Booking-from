@@ -57,11 +57,13 @@ allRadioInputs.forEach(radioInput => {
 
             const sameNameInputs = document.getElementsByName(`${radioInput.getAttribute("name")}`);
             sameNameInputs.forEach(inp => {
-                document.querySelector(`label[for='${inp.getAttribute("id")}']`).classList.remove("selected");
+                const label = document.querySelector(`label[for='${inp.getAttribute("id")}']`);
+                label.classList.remove("selected");
             })
         }
 
-        document.querySelector(`label[for='${radioInput.getAttribute("id")}']`).classList.toggle("selected");
+        const selectedLabel = document.querySelector(`label[for='${radioInput.getAttribute("id")}']`);
+        selectedLabel.classList.toggle("selected");
     }
 })
 
