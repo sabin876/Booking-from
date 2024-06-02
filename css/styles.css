@@ -25,6 +25,12 @@ span {
   color: #095a5b;
 }
 
+.switch-form-btn {
+  display: flex;
+  justify-content: space-around;
+  padding-block: 1rem;
+}
+
 .wo-btn {
   padding: .2rem .7rem;
   border: 2px solid #095a5b4d;
@@ -126,10 +132,10 @@ span {
 
 .box {
   /*   border: 1px solid black; */
-  width: 80%;
+  width: 84%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
-  padding: 40px;
+  padding: 40px 20px;
   margin: auto;
   margin-top: 40px;
 }
@@ -172,20 +178,22 @@ span {
 }
 
 .extended-travel {
-    display: flex;
-    flex-direction: column; /* Default to column for mobile screens */
-    justify-content: space-between;
-    /*box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
-    padding: 20px;
-    border-top: 3px solid #96b0a4;
-    width: 100%
+  display: flex;
+  flex-direction: column;
+  /* Default to column for mobile screens */
+  justify-content: space-between;
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
+  padding: 20px;
+  border-top: 3px solid #96b0a4;
+  width: 100%
 }
 
-.calander, .plan {
-    margin: 10px 0;
-    padding: 20px;
-    overflow: hidden;
-    min-width: 0;
+.calander,
+.plan {
+  margin: 10px 0;
+  padding: 20px;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .items {
@@ -215,44 +223,45 @@ span {
 }*/
 
 .plan1 {
-    background: hsl(161.13deg 69.85% 23.73% / 33%);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  background: hsl(161.13deg 69.85% 23.73% / 33%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .plan .sub {
-    display: flex;
+  display: flex;
   /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
-    flex-direction: row; /* Items inside sub are side by side */ 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    /*grid-column-gap: 2px;*/
-    padding: 20px;
-    margin: 10px 0;
-    background: #fff;
-    /* border: 1px solid green; */
-    overflow: hidden;
+  flex-direction: row;
+  /* Items inside sub are side by side */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  /*grid-column-gap: 2px;*/
+  padding: 20px;
+  margin: 10px 0;
+  background: #fff;
+  /* border: 1px solid green; */
+  overflow: hidden;
 }
 
 .counter {
-    --border-width: 0.1px;
-    --border-color: #4a847c80;
-    border: var(--border-width) solid var(--border-color);
-    display: flex;
-    align-items: center;
-    top: 10px;
-    background: transparent;
-    border-radius: 15px;
+  --border-width: 0.1px;
+  --border-color: #4a847c80;
+  border: var(--border-width) solid var(--border-color);
+  display: flex;
+  align-items: center;
+  top: 10px;
+  background: transparent;
+  border-radius: 15px;
 
   >span {
-    border:none;
+    border: none;
     height: 100%;
     display: grid;
     place-items: center;
     border-left: var(--border-width) solid var(--border-color);
-    border-right:var(--border-width) solid var(--border-color);
+    border-right: var(--border-width) solid var(--border-color);
 
   }
 
@@ -261,15 +270,19 @@ span {
   }
 }
 
-.plan .items, .plan .counter, .plan .pricing, .plan .select {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    flex: 1; /* flex basis of 1 to distribute space equally */
+.plan .items,
+.plan .counter,
+.plan .pricing,
+.plan .select {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  flex: 1;
+  /* flex basis of 1 to distribute space equally */
 }
 
 .plan .counter .btn {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 
@@ -312,7 +325,7 @@ i {
 .content {
   font-weight: 600;
   font-size: 14px;
-    margin: auto;
+  margin: auto;
 }
 
 .price {
@@ -325,7 +338,7 @@ i {
 
 .price h5 {
   color: #095a5b;
-    margin: auto;
+  margin: auto;
 }
 
 .price h5 .total-price {
@@ -802,36 +815,47 @@ table tbody tr {
 
 /* Responsive design */
 @media (min-width: 600px) {
-    .extended-travel {
-        flex-direction: row; /* Side by side on larger screens */
-        flex-wrap: wrap; /* Allow wrapping */
-    }
+  .extended-travel {
+    flex-direction: row;
+    /* Side by side on larger screens */
+    flex-wrap: wrap;
+    /* Allow wrapping */
+  }
 
-    .calander, .plan {
-        flex: 1 1 48%; /* Each take up half the width */
-        margin: 10px;
-    }
-    
-    .plan .sub {
-        flex: 1 1 100%; /* Full width for each sub */
-    }
+  .calander,
+  .plan {
+    flex: 1 1 48%;
+    /* Each take up half the width */
+    margin: 10px;
+  }
 
-    .plan .items, .plan .counter, .plan .pricing, .plan .select {
-        flex: 1; /* Adjust width of items inside sub */
-        margin-right: 10px;
-    }
+  .plan .sub {
+    flex: 1 1 100%;
+    /* Full width for each sub */
+  }
+
+  .plan .items,
+  .plan .counter,
+  .plan .pricing,
+  .plan .select {
+    flex: 1;
+    /* Adjust width of items inside sub */
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 768px) {
-    .plan .sub {
-        flex: 1 1 calc(33% - 20px); /* Fit three items in a row with margin */
-        margin: 10px;
-    }
+  .plan .sub {
+    flex: 1 1 calc(33% - 20px);
+    /* Fit three items in a row with margin */
+    margin: 10px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .plan .sub {
-        flex: 1 1 calc(33% - 20px); /* Fit three items in a row with margin */
-        margin: 10px;
-    }
+  .plan .sub {
+    flex: 1 1 calc(33% - 20px);
+    /* Fit three items in a row with margin */
+    margin: 10px;
+  }
 }
