@@ -236,19 +236,24 @@ span {
     overflow: hidden;
 }
 
-.plan .counter {
+.counter {
     --border-width: 0.1px;
     --border-color: #4a847c80;
     border: var(--border-width) solid var(--border-color);
     display: flex;
     align-items: center;
     top: 10px;
-    margin-top: 13px;
     background: transparent;
-    border-radius: 5px;
+    border-radius: 15px;
 
   >span {
-    border: var(--border-width) solid var(--border-color);
+    border:none;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-left: var(--border-width) solid var(--border-color);
+    border-right:var(--border-width) solid var(--border-color);
+
   }
 
   >button {
@@ -382,7 +387,7 @@ i {
 
 .count {
   border: 1px solid black;
-  padding: 1px 4px 0px;
+  padding: 1px 10px;
 }
 
 .increment {
