@@ -172,15 +172,20 @@ span {
 }
 
 .extended-travel {
-  display: flex;
-  justify-content: space-between;
-  /*box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
-  padding: 12px;
-  border-top: 3px solid #96b0a4;
+    display: flex;
+    flex-direction: column; /* Default to column for mobile screens */
+    justify-content: space-between;
+    /*box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
+    padding: 20px;
+    border-top: 3px solid #96b0a4;
+    width: 100%
 }
 
-.calander {
-  width: 58%;
+.calander, .plan {
+    margin: 10px 0;
+    padding: 20px;
+    overflow: hidden;
+    min-width: 0;
 }
 
 .items {
@@ -202,46 +207,45 @@ span {
   font-size: 18px;
 }
 
-.plan {
+/*.plan {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 40%;
-}
+}*/
 
 .plan1 {
-  background: hsl(161.13deg 69.85% 23.73% / 33%);
-  padding: 8px;
-  border-radius: 12px;
+    background: hsl(161.13deg 69.85% 23.73% / 33%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.plan1>.sub {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  grid-column-gap: 2px;
-  padding: 1px 7px;
-  margin: 16px;
-  background: #fff;
-  /* border: 1px solid green; */
-  border-radius: 60px;
+.plan .sub {
+    display: flex;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    flex-direction: row; /* Items inside sub are side by side */ 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    /*grid-column-gap: 2px;*/
+    padding: 20px;
+    margin: 10px 0;
+    background: #fff;
+    /* border: 1px solid green; */
+    overflow: hidden;
 }
 
-.counter {
-  --border-width: 0.1px;
-  --border-color: #4a847c80;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: var(--border-width) solid var(--border-color);
-  height: 27px;
-  top: 10px;
-  margin-top: 13px;
-  background: transparent;
-  border-radius: 5px;
-  overflow: hidden;
+.plan .counter {
+    --border-width: 0.1px;
+    --border-color: #4a847c80;
+    border: var(--border-width) solid var(--border-color);
+    display: flex;
+    align-items: center;
+    top: 10px;
+    margin-top: 13px;
+    background: transparent;
+    border-radius: 5px;
 
   >span {
     border: var(--border-width) solid var(--border-color);
@@ -250,6 +254,17 @@ span {
   >button {
     border: none;
   }
+}
+
+.plan .items, .plan .counter, .plan .pricing, .plan .select {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex: 1; /* flex basis of 1 to distribute space equally */
+}
+
+.plan .counter .btn {
+    margin: 0 5px;
 }
 
 
@@ -283,7 +298,7 @@ i {
 }
 
 .calculate {
-  padding: 8px;
+  padding: 8px 20px;
   margin: auto;
 }
 
@@ -292,6 +307,7 @@ i {
 .content {
   font-weight: 600;
   font-size: 14px;
+    margin: auto;
 }
 
 .price {
@@ -299,11 +315,12 @@ i {
   align-items: center;
   text-align: center;
   background: #96b0a4;
-  padding: 8px;
+  padding: 8px 20px;
 }
 
 .price h5 {
   color: #095a5b;
+    margin: auto;
 }
 
 .price h5 .total-price {
@@ -776,4 +793,40 @@ table tbody tr {
 
 .accordion-flush>.accordion-item {
   border-radius: 20px !important;
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+    .extended-travel {
+        flex-direction: row; /* Side by side on larger screens */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .calander, .plan {
+        flex: 1 1 48%; /* Each take up half the width */
+        margin: 10px;
+    }
+    
+    .plan .sub {
+        flex: 1 1 100%; /* Full width for each sub */
+    }
+
+    .plan .items, .plan .counter, .plan .pricing, .plan .select {
+        flex: 1; /* Adjust width of items inside sub */
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .plan .sub {
+        flex: 1 1 calc(33% - 20px); /* Fit three items in a row with margin */
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .plan .sub {
+        flex: 1 1 calc(33% - 20px); /* Fit three items in a row with margin */
+        margin: 10px;
+    }
 }
