@@ -10,6 +10,10 @@
 
 }
 
+input {
+  accent-color: var(--primary-color);
+}
+
 
 h3 {
   font-size: 1.5rem !important;
