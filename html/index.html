@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    
     <div class="box">
         <div class="travel accordion accordion-flush" id="accordionExample">
             <div class="container1 accordion-item">
@@ -366,14 +367,16 @@
                                     <span
                                         class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
                                     <h5>PKR = $50</h5>
-                                    <button class="wo-btn wo-bg-secondary">Select</button>
+                                    <label for="flight-ktm-pkr" class="wo-btn">Select</label>
+                                    <input id="flight-ktm-pkr" type="checkbox" name="flight-cost" class="wo-check-input">
                                 </div>
                                 <div class="capsule-2">
                                     <h5>PKR</h5>
                                     <span
                                         class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
                                     <h5>CHT = $50</h5>
-                                    <button class="wo-btn">Select</button>
+                                    <label for="flight-pkr-cht" class="wo-btn">Select</label>
+                                    <input id="flight-pkr-cht" type="checkbox" name="flight-cost" class="wo-check-input">
                                 </div>
                                 <div class="inner-box2">
                                     <h5>Airport Pickup = </h5>
@@ -469,24 +472,28 @@
                                 </table>
                             </div>
                             <div class="payment outer-box">
-                                <div class="inner-box1">
-                                    <input type="radio" id="fullPayment" name="paymentOption" value="full">
-                                    <label for="fullPayment">Pay Full Amount</label><br>
-
-                                    <input type="radio" id="halfPayment" name="paymentOption" value="half">
-                                    <label for="halfPayment">Pay 20% Deposit</label><br>
+                                    <div class="step1">
+                                        <div class="d-flex gap-1">
+                                        <input type="radio" id="option1" name="options" value="option1">
+                                <label for="option1">Pay full Amount</label>
+                            </div>
+                                <div class="d-flex gap-1">
+                                <input type="radio" id="option2" name="options" value="option2">
+                                <label for="option2">pay 20% Deposite</label>
+                            </div>
                                 </div>
-                                <div class="email">
-                                    <button>Paypal</button>
-                                    <h6>Additional 2% is charged for paypal payment</h6>
-                                </div>
-                                <button>Book Now Via Email</button>
-                                <div>
-                                    <input type="checkbox" id="terms&condition" name="terms">
-                                    <label for="terms&condition">
-                                        <h6>*I agree with terms of Services and Privacy Statement</h6>
-                                    </label><br>
-                                </div>
+                                   
+                                    <div class="step2">
+                                        <img src="../images/paypal.webp" width="100px"  alt="PayPal">
+                                    </div>
+                                    Addtional 2% is charged<br> for paypal payment
+                                    <div class="step1" style="font-weight: bold; color: #125958; font-size:20px;">
+                                        Book Via Email
+                                    </div>
+                                    <input type="radio" id="option1" name="options" value="option1">
+                                <label for="option1">* i agree with terms of service and privacy statement </label>
+                                
+                                alt    
                             </div>
                         </form>
                     </div>
