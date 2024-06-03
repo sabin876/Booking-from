@@ -246,15 +246,15 @@ span {
 }
 
 .counter {
-    --border-width: 0.1px;
-    --border-color: #4a847c80;
-    border: var(--border-width) solid var(--border-color);
-    display: flex;
-    align-items: center;
-    top: 10px;
-    background: transparent;
-    border-radius: 15px;
-    justify-content: center;
+  --border-width: 0.1px;
+  --border-color: #4a847c80;
+  border: var(--border-width) solid var(--border-color);
+  display: flex;
+  align-items: center;
+  top: 10px;
+  background: transparent;
+  border-radius: 15px;
+  justify-content: center;
 
   >span {
     border: none;
@@ -275,17 +275,17 @@ span {
 .plan .counter,
 .plan .pricing,
 .plan .select {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    flex: 1;
-    /* flex basis of 1 to distribute space equally */
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  flex: 1;
+  /* flex basis of 1 to distribute space equally */
+  justify-content: center;
 }
 
 .plan .counter .btn {
-    margin: 0 5px;
-    flex: 1;
+  margin: 0 5px;
+  flex: 1;
 }
 
 
@@ -311,36 +311,36 @@ i {
 }
 
 .total {
-    display: flex;
-    /*width: 180px;*/
-    border: 2px solid green;
-    border-radius: 10px;
-    overflow: hidden;
-    justify-content: center;
+  display: flex;
+  /*width: 180px;*/
+  border: 2px solid green;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .calculate {
-    padding: 8px 20px;
-    margin: auto;
-    flex: 1 1 60%;
+  padding: 8px 20px;
+  margin: auto;
+  flex: 1 1 60%;
 }
 
 
 
 .content {
-    font-weight: 600;
-    font-size: 14px;
-    margin: auto;
-    text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
 }
 
 .price {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: #96b0a4;
-    padding: 8px 20px;
-    flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #96b0a4;
+  padding: 8px 20px;
+  flex: 1 1 40%;
 }
 
 .price h5 {
@@ -866,6 +866,7 @@ table tbody tr {
     margin: 10px;
   }
 }
+
 /*for payment css */
 .payment {
   background-color: #a5bdbd;
@@ -877,10 +878,11 @@ table tbody tr {
   margin: 20px auto;
   text-align: center;
 }
-.step1{
+
+.step1 {
   background-color: white;
   /* width: 265px; */
-  padding: 2px 13px;
+  padding: .4rem 1rem;
   border: 1px solid #ccc;
   border-radius: 50px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -892,9 +894,10 @@ table tbody tr {
   /* height: 40px; */
   gap: 1rem;
 }
-.step2{
+
+.step2 {
   background-color: white;
-  width:180px;
+  width: 180px;
   border: 1px solid #ccc;
   border-radius: 50px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
