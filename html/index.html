@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    
+
     <div class="box">
         <div class="travel accordion accordion-flush" id="accordionExample">
             <div class="container1 accordion-item">
@@ -368,7 +368,8 @@
                                         class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
                                     <h5>PKR = $50</h5>
                                     <label for="flight-ktm-pkr" class="wo-btn">Select</label>
-                                    <input id="flight-ktm-pkr" type="checkbox" name="flight-cost" class="wo-check-input">
+                                    <input id="flight-ktm-pkr" type="checkbox" name="flight-cost"
+                                        class="wo-check-input">
                                 </div>
                                 <div class="capsule-2">
                                     <h5>PKR</h5>
@@ -376,7 +377,8 @@
                                         class="material-symbols-outlined px-3 py-1 rounded-1 wo-bg-secondary">flight</span>
                                     <h5>CHT = $50</h5>
                                     <label for="flight-pkr-cht" class="wo-btn">Select</label>
-                                    <input id="flight-pkr-cht" type="checkbox" name="flight-cost" class="wo-check-input">
+                                    <input id="flight-pkr-cht" type="checkbox" name="flight-cost"
+                                        class="wo-check-input">
                                 </div>
                                 <div class="inner-box2">
                                     <h5>Airport Pickup = </h5>
@@ -410,90 +412,94 @@
 
                     </button>
                 </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                    data-parent="#accordionExample">
                     <div class="extended">
                         <form>
                             <div class="form-value">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <label for="title">Title:</label>
-                                            <select name="title" id="title">
-                                                <option value="Mr.">Mr.</option>
-                                                <option value="Mrs.">Mrs.</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <label for="fname">First name:</label>
-                                            <input type="text" id="fname" required />
-                                        </td>
-                                        <td colspan="2">
-                                            <label for="lname">Last name:</label>
-                                            <input type="text" id="lname" required />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <label for="email">Email:</label>
-                                            <input type="text" id="email" required />
-                                        </td>
-                                        <td colspan="2">
-                                            <label for="phone">Phone:</label>
-                                            <input type="number" id="phone" required />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <label for="mail-address">Mailing Address:</label>
-                                            <input type="text" id="mail-address" required />
-                                        </td>
-                                        <td colspan="2">
-                                            <label for="city">City:</label>
-                                            <input type="text" id="city" required />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <label for="country">Country:</label>
-                                            <select name="country" id="country">
-                                                <option value="Nepal">Nepal</option>
-                                                <option value="Bhutan">Bhutan</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            Province State or Region
-                                            <input />
-                                        </td>
-                                        <td>
-                                            Postal or Zip
-                                            <input />
-                                        </td>
-                                    </tr>
-                                </table>
+                                <div class="row">
+                                    <div class="col col-sm-2">
+                                        <label for="title">Title:</label>
+                                        <select id="title" class="w-full">
+                                            <option value="mr">Mr.</option>
+                                            <option value="mrs">Mrs.</option>
+                                        </select>
+                                    </div>
+                                    <div class="col col-sm-4">
+                                        <label for="fname">First Name:</label>
+                                        <input type="text" id="fname" name="fname" class="w-full">
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <label for="fname">Last Name:</label>
+                                        <input type="text" id="lname" name="lname" class="w-full">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col col-sm-6">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" class="w-full">
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <label for="phone">Phone:</label>
+                                        <input type="tel" id="phone" name="phone" class="w-full">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col col-sm-6">
+                                        <label for="mailing-addr">Mailing Address:</label>
+                                        <input type="text" id="mailing-addr" name="mailing-addr" class="w-full">
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <label for="City">City:</label>
+                                        <input type="text" id="city" name="city" class="w-full">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col col-sm-6">
+                                        <label for="country">Country:</label>
+                                        <select id="country" name="country" class="w-full">
+                                            <option value="0">--</option>
+                                        </select>
+                                    </div>
+                                    <div class="col col-sm-4">
+                                        <label for="state">Provice or State:</label>
+                                        <select id="state" name="state" class="w-full">
+                                            <option value="0">--</option>
+                                        </select>
+                                    </div>
+                                    <div class="col col-sm-2">
+                                        <label for="postal">Postal:</label>
+                                        <input type="number" min="0" id="postal" name="postal" class="w-full">
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="payment outer-box">
-                                    <div class="step1">
-                                        <div class="d-flex gap-1">
+                                <div class="step1">
+                                    <div class="d-flex gap-1">
                                         <input type="radio" id="option1" name="options" value="option1">
-                                <label for="option1">Pay full Amount</label>
-                            </div>
-                                <div class="d-flex gap-1">
-                                <input type="radio" id="option2" name="options" value="option2">
-                                <label for="option2">pay 20% Deposite</label>
-                            </div>
+                                        <label for="option1">Pay full Amount</label>
+                                    </div>
+                                    <div class="d-flex gap-1">
+                                        <input type="radio" id="option2" name="options" value="option2">
+                                        <label for="option2">pay 20% Deposite</label>
+                                    </div>
                                 </div>
-                                   
-                                    <div class="step2">
-                                        <img src="../images/paypal.webp" width="100px"  alt="PayPal">
-                                    </div>
-                                    Addtional 2% is charged<br> for paypal payment
-                                    <div class="step1" style="font-weight: bold; color: #125958; font-size:20px;">
-                                        Book Via Email
-                                    </div>
-                                    <input type="radio" id="option1" name="options" value="option1">
+
+                                <div class="step2">
+                                    <img src="../images/paypal.webp" width="100px" alt="PayPal">
+                                </div>
+                                Addtional 2% is charged<br> for paypal payment
+                                <div class="step1" style="font-weight: bold; color: #125958; font-size:20px;">
+                                    Book Via Email
+                                </div>
+                                <input type="radio" id="option1" name="options" value="option1">
                                 <label for="option1">* i agree with terms of service and privacy statement </label>
-                                
-                                alt    
+
+                                alt
                             </div>
                         </form>
                     </div>
