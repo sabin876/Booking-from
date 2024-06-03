@@ -385,6 +385,7 @@ i {
       text-align: center;
       min-width: 11rem;
       width: 100%;
+      border-radius: 2rem;
     }
   }
 
