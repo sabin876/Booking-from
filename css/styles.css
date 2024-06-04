@@ -192,6 +192,12 @@ span {
   width: 100%
 }
 
+#collapseTwo .row {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 .calander,
 .plan {
   margin: 10px 0;
@@ -548,6 +554,9 @@ i {
     align-items: center;
     justify-content: center;
     position: relative;
+    max-width: calc(50%-16px);
+    flex: 1 1 calc(50% - 16px);
+    
 
     & label {
       border-radius: 10px;
@@ -560,6 +569,12 @@ i {
       right: -6px;
     }
   }
+}
+
+.hotel-images img {
+    width: 100%;
+    height: auto;
+    display: block
 }
 
 .hotel-photo {
@@ -703,12 +718,13 @@ i {
 }
 
 .extended {
-  display: flex;
-  padding: 12px;
-  border-top: 3px solid #96b0a4;
-  justify-content: space-around;
-  align-items: center;
-  gap: 3rem;
+    display: flex;
+    padding: 12px;
+    border-top: 3px solid #96b0a4;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .pickup {
@@ -767,9 +783,14 @@ label {
 }
 
 form {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+form .form-value{
+    margin-bottom: 20px;
 }
 
 table tbody tr {
@@ -829,7 +850,7 @@ table tbody tr {
 
 /* Responsive design */
 @media (min-width: 600px) {
-  .extended-travel {
+  .extended-travel  {
     flex-direction: row;
     /* Side by side on larger screens */
     flex-wrap: wrap;
@@ -872,6 +893,12 @@ table tbody tr {
     /* Fit three items in a row with margin */
     margin: 10px;
   }
+}
+
+@media (min-width: 991px) {
+    #collapseTwo .row {
+        flex-direction: row;
+    }
 }
 
 /*for payment css */
