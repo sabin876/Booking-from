@@ -497,14 +497,18 @@ i {
 
 /* Hotel image responsive */
 
-.mid-panel {
-  container: mid / inline-size;
+.mid-panel ,.first-panel{
+    flex: 1;
 }
 
 @container mid (max-width: 400px) {
   .hotel-images {
     grid-template-columns: 1fr;
   }
+}
+
+.third-pannel {
+    flex: 1;
 }
 
 #accommodation .accommodation-option {
@@ -895,9 +899,11 @@ table tbody tr {
   }
 }
 
-@media (min-width: 991px) {
-    #collapseTwo .row {
-        flex-direction: row;
+@media (min-width: 992px) {
+    .accomodation-content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
     }
 }
 
